@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boulangerie Les Petits Pains</title>
+    <link rel="stylesheet" href="style_vendeur.css">
+    <script>
+        function confirmDeconnexion() {
+            if (confirm("Êtes-vous sûr de vouloir vous déconnecter ?")) {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</head>
+<body>
+
+<main>
+    <div class="button-container">
+        <button onclick="window.location.href='Commande.html'">Commande</button>
+        <button onclick="window.location.href='Stock.html'">Stock</button>
+        <button onclick="confirmDeconnexion()">Déconnexion</button>
+    </div>
+
+    <!-- Les autres sections de votre page ici... -->
+
+</main>
+
+<footer>
+    <!-- Contenu du footer ici... -->
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

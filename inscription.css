@@ -1,0 +1,235 @@
+/* Styles de base */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Arial', sans-serif; /* Utilisez la police que vous préférez */
+    color: white; /* Couleur de texte globale */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Barre de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #deb887;
+    padding: 10px;
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+nav a:hover {
+    color: #d2691e;
+}
+
+/* Boutons */
+button, .button {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif; /* Assurez-vous que cela correspond à votre style de police général */
+}
+
+button:hover, .button:hover {
+    background-color: #45a049;
+}
+
+/* Fond de page */
+body {
+    background-image: url('/Users/heddy/Desktop/esilv/A4/Software/Image/Accueil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Styles de section */
+#banner, .about-section, .cart-item, .subscription-option {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Noir avec 60% d'opacité */
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#banner h1, #banner p, .about-section h2, .about-section p {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Images produits */
+.product, .product-image {
+    display: flex;
+    align-items: center;
+    width: 100px; /* ou la taille que vous souhaitez */
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Informations produit */
+.product-info {
+    flex-grow: 1;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Main et cart-item */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Totals et boutons du panier */
+#cart-total {
+    font-weight: bold;
+}
+
+#checkout {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+/* Styles des articles du panier */
+.cart-item button {
+    background-color: #d9534f;
+    padding: 5px 10px;
+}
+
+.cart-item button:hover {
+    background-color: #c9302c;
+}
+
+.login-form label, .login-form input {
+    color: black; /* ou une autre couleur visible sur fond blanc */
+}
+
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 8px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    margin-top: 10px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+/*
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 90%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-inscription {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+*/

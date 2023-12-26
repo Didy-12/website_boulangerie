@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Panier - La Boulangerie Les Petits Pains</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Produits - La Boulangerie Les Petits Pains</title>
+<link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que le chemin d'accès au fichier CSS est correct -->
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Produit</a></li>
+            <li><a href="abonnement.html">Abonnement</a></li>
+            <li><a href="panier.html">Panier</a></li>
+            <li><a href="apropos.html">À propos de nous</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ...Votre barre de navigation... -->
+
+<main>
+    <h2>Votre Panier</h2>
+    <div id="cart-items">
+        <!-- Les produits du panier seront ajoutés ici -->
+    </div>
+    <p>Total: <span id="cart-total">0</span> €</p>
+    <a href="payement.html"><button>Payer</button></a>
+
+
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>La Boulangerie Les Petits Pains</h3>
+            <p>Boulangerie-Pâtisserie artisanale d'excellence depuis 2013.</p>
+        </div>
+        <div class="footer-section">
+            <h4>LES PETIS PAINS</h4>
+            <ul>
+                <li><a href="#">Nos adresses</a></li>
+                <li><a href="#">Recrutement</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Service client</h4>
+            <ul>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Inscrivez-vous</p>
+            <input type="email" placeholder="Courriel">
+            <button type="submit">S'abonner</button>
+        </div>
+    </div>
+    <div class="footer-social-media">
+        <a href="#">Facebook</a> |
+        <a href="#">Pinterest</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 La Boulangerie Les Petits Pains. Tous droits réservés.</p>
+        <p>Commerce électronique propulsé par La Boulangerie Les Petits Pains</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        let total = 0;
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Regroupez les articles par nom et calculez la quantité
+        let groupedCart = cart.reduce((acc, product) => {
+            if (acc[product.name]) {
+                acc[product.name].qty += 1;
+                acc[product.name].price += product.price;
+            } else {
+                acc[product.name] = {
+                    ...product,
+                    qty: 1
+                };
+            }
+            return acc;
+        }, {});
+
+        // Générez le HTML pour chaque produit groupé dans le panier
+        Object.values(groupedCart).forEach(product => {
+            const div = document.createElement('div');
+            div.className = 'cart-item';
+            div.innerHTML = `
+            <p>${product.name} (Quantité: ${product.qty})</p>
+            <p>Total: ${product.price.toFixed(2)} €</p>
+            <button class="remove-from-cart" data-name="${product.name}">Enlever</button>
+        `;
+            cartItems.appendChild(div);
+            total += product.price;
+        });
+
+        // Affichez le total
+        cartTotal.textContent = total.toFixed(2);
+
+        // Gérer la suppression du produit
+        document.querySelectorAll('.remove-from-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const name = this.getAttribute('data-name');
+                // Filtrez le panier pour enlever un élément du produit spécifié
+                cart = cart.filter(product => product.name !== name);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                location.reload(); // Recharger la page pour mettre à jour l'affichage
+            });
+        });
+    });
+
+    document.getElementById('checkout').addEventListener('click', function() {
+        window.location.href = 'payement.html'; // Redirection vers la page de paiement
+    });
+
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>

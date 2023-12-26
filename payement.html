@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Paiement - La Boulangerie Les Petits Pains</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="produits.html">Produit</a></li>
+      <li><a href="abonnement.html">Abonnement</a></li>
+      <li><a href="panier.html">Panier</a></li>
+      <li><a href="apropos.html">À propos de nous</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Récapitulatif de Paiement</h1>
+  <section id="order-summary">
+    <h2>Votre Commande</h2>
+    <div id="items-list">
+
+    </div>
+    <p>Estimation du temps de livraison : <span id="delivery-time">48 heures</span></p>
+    <p>Total à payer : <span id="total-amount">0 €</span></p>
+  </section>
+
+  <section id="payment-options">
+    <a href="invite.html"><button>Régler en tant qu'invité</button></a>
+
+    <a href="connexion.html"><button id="login-checkout">Se connecter</button></a>
+
+  </section>
+</main>
+
+<footer>
+  <!-- Contenu de votre footer ici -->
+</footer>
+
+<script src="payement.js"></script>
+</body>
+</html>

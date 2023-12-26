@@ -1,0 +1,269 @@
+/* Réinitialisation de base pour les marges, les paddings et la taille */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+body, h1, h2, h3, p, ul, li, a, button {
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+h8 {
+
+    font-size: 3em;
+    color: white;
+}
+
+
+
+
+h7 {
+    font-family: 'Arial', sans-serif;
+    color: white;
+
+}
+body {
+    background-color:#deb887;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #deb887; /* ou une autre couleur de fond si nécessaire */
+    z-index: 1001; /* Assurez-vous qu'il est au-dessus de la barre de navigation */
+    margin-bottom: 0;
+}
+
+header h6 {
+    margin: 0;
+    padding: 5px 0; /* Ajustez selon vos besoins */
+    text-align: center;
+
+}
+
+
+
+
+h6 {
+    margin-top: 0; /* Réduit l'espace au-dessus de 'Les Petits Pains' */
+    padding-top: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 20px
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Barre de navigation fixée en haut */
+nav {
+    margin-top: 0;
+    position: fixed;
+
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #deb887; /* La couleur de fond de votre nav */
+
+}
+.centered-content {
+    max-width: 1400px; /* Ou la largeur que vous préférez pour votre paragraphe */
+    padding: 40px; /* Ajoute de l'espace autour du texte */
+    background-color:#deb887;
+    text-align: center;
+    color: #deb887;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav li {
+    padding: 0 20px;
+    margin: 0;
+}
+
+nav a:hover {
+    color: #d2691e;
+}
+
+/* Boutons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #deb887;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+}
+
+button:hover, .button:hover {
+    background-color: #d2691e;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles de section */
+.fullpage-image {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#image1 {
+    background-image: url('/Users/heddy/Desktop/esilv/A4/Software/Image/Accueil.png'); /* Assurez-vous que le chemin est correct */
+}
+
+#image2 {
+    background-image: url('/Users/heddy/Desktop/esilv/A4/Software/Image/buche.jpg'); /* Assurez-vous que le chemin est correct */
+}
+
+.fullpage-image h1, .fullpage-image h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    background-color: #deb887;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-social-media {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-social-media a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+/* Structure du site */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    width: 100%; /* Ajouté pour empêcher tout débordement horizontal */
+    margin-top:0; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Utilisez la hauteur de la fenêtre pour centrer verticalement */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+}
+
+.subscribe-button {
+    margin-top: 20px; /* Ajoute un peu d'espace entre le paragraphe et le bouton */
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.item {
+    flex-basis: 30%;
+    text-align: center;
+    overflow: hidden; /* Prevents the scaled image from overflowing its container */
+}
+.item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+.item img:hover {
+    transform: scale(1.1); /* Scales the image up to 110% of its original size */
+}
+.item h2 {
+    font-size: 1.5em;
+    color: white;
+}
+.item p {
+    font-size: 1em;
+    color: white;
+}
+.item .price {
+    font-size: 1.2em;
+    color: white;
+}

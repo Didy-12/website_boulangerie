@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock - La Boulangerie Les Petits Pains</title>
+    <link rel="stylesheet" href="style_stock.css">
+    <script src="stock.js" defer></script>
+</head>
+<body>
+<main>
+    <div class="centered-container">
+        <button class="btn-retour" onclick="window.location.href='accueil.html'">Retour</button>
+    </div>
+    <h1>Stock de la Boulangerie</h1>
+    <div class="stock-container">
+        <!-- Exemple d'article en stock -->
+        <div class="article-stock">
+            <p class="article-nom">Baguette</p>
+            <p class="article-quantite">Quantité en stock: <span id="quantite-baguette">20</span></p>
+            <div class="reapprovisionnement">
+                <!-- Champ pour la préparation -->
+                <input type="number" min="1" placeholder="Quantité à préparer">
+                <button class="btn-preparer">Préparer</button>
+
+                <!-- Champ pour ajouter au stock -->
+                <input type="number" id="input-baguette" min="1" placeholder="Quantité à ajouter">
+                <button class="btn-ajouter" onclick="ajouterAuStock('baguette')">Ajouter au stock</button>
+            </div>
+        </div>
+
+        <div class="article-stock">
+            <p class="article-nom">Tradition</p>
+            <p class="article-quantite">Quantité en stock: <span id="quantite-tradition">15</span></p>
+            <div class="reapprovisionnement">
+                <input type="number" min="1" placeholder="Quantité à préparer">
+                <button class="btn-preparer">Préparer</button>
+                <input type="number" id="input-tradition" min="1" placeholder="Quantité à ajouter">
+                <button class="btn-ajouter" onclick="ajouterAuStock('tradition')">Ajouter au stock</button>
+            </div>
+        </div>
+
+        <div class="article-stock">
+            <p class="article-nom">Pain au chocolat</p>
+            <p class="article-quantite">Quantité en stock: <span id="quantite-pain-au-chocolat">30</span></p>
+            <div class="reapprovisionnement">
+                <input type="number" min="1" placeholder="Quantité à préparer">
+                <button class="btn-preparer">Préparer</button>
+                <input type="number" id="input-pain-au-chocolat" min="1" placeholder="Quantité à ajouter">
+                <button class="btn-ajouter" onclick="ajouterAuStock('pain-au-chocolat')">Ajouter au stock</button>
+            </div>
+        </div>
+
+        <div class="article-stock">
+            <p class="article-nom">Croissant</p>
+            <p class="article-quantite">Quantité en stock: <span id="quantite-croissant">25</span></p>
+            <div class="reapprovisionnement">
+                <input type="number" min="1" placeholder="Quantité à préparer">
+                <button class="btn-preparer">Préparer</button>
+                <input type="number" id="input-croissant" min="1" placeholder="Quantité à ajouter">
+                <button class="btn-ajouter" onclick="ajouterAuStock('croissant')">Ajouter au stock</button>
+            </div>
+        </div>
+
+        <div class="article-stock">
+            <p class="article-nom">Éclair au chocolat</p>
+            <p class="article-quantite">Quantité en stock: <span id="quantite-eclair-au-chocolat">20</span></p>
+            <div class="reapprovisionnement">
+                <input type="number" min="1" placeholder="Quantité à préparer">
+                <button class="btn-preparer">Préparer</button>
+                <input type="number" id="input-eclair-au-chocolat" min="1" placeholder="Quantité à ajouter">
+                <button class="btn-ajouter" onclick="ajouterAuStock('eclair-au-chocolat')">Ajouter au stock</button>
+            </div>
+        </div>
+
+        <div class="article-stock">
+            <p class="article-nom">Tarte aux pommes</p>
+            <p class="article-quantite">Quantité en stock: <span id="quantite-tarte-aux-pommes">10</span></p>
+            <div class="reapprovisionnement">
+                <input type="number" min="1" placeholder="Quantité à préparer">
+                <button class="btn-preparer">Préparer</button>
+                <input type="number" id="input-tarte-aux-pommes" min="1" placeholder="Quantité à ajouter">
+                <button class="btn-ajouter" onclick="ajouterAuStock('tarte-aux-pommes')">Ajouter au stock</button>
+            </div>
+        </div>
+
+        <div class="article-stock">
+            <p class="article-nom">Quiche Lorraine</p>
+            <p class="article-quantite">Quantité en stock: <span id="quantite-quiche-lorraine">8</span></p>
+            <div class="reapprovisionnement">
+                <input type="number" min="1" placeholder="Quantité à préparer">
+                <button class="btn-preparer">Préparer</button>
+                <input type="number" id="input-quiche-lorraine" min="1" placeholder="Quantité à ajouter">
+                <button class="btn-ajouter" onclick="ajouterAuStock('quiche-lorraine')">Ajouter au stock</button>
+            </div>
+        </div>
+
+        <!-- Répéter pour d'autres articles... -->
+    </div>
+</main>
+</body>
+</html>

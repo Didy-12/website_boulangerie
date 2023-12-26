@@ -1,0 +1,248 @@
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Arial', sans-serif; /* Utilisez la police que vous préférez */
+    color: white; /* Couleur de texte globale */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Barre de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #deb887;
+    padding: 10px;
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+nav a:hover {
+    color: #d2691e;
+}
+
+/* Boutons */
+button, .button {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif; /* Assurez-vous que cela correspond à votre style de police général */
+}
+
+button:hover, .button:hover {
+    background-color: #45a049;
+}
+
+/* Fond de page */
+
+/* Fond de page */
+body {
+    background-color: #d2691e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Styles de section */
+#banner, .about-section, .cart-item, .subscription-option {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Noir avec 60% d'opacité */
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#banner h1, #banner p, .about-section h2, .about-section p {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* Main et cart-item */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Totals et boutons du panier */
+#cart-total {
+    font-weight: bold;
+}
+
+#checkout {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+/* Styles des articles du panier */
+.cart-item button {
+    background-color: #d9534f;
+    padding: 5px 10px;
+}
+
+.cart-item button:hover {
+    background-color: #c9302c;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    background-color: #deb887;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-social-media {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-social-media a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+/* Si vous avez besoin de mettre le footer en bas de la page, vous pouvez utiliser : */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Ajoutez des styles supplémentaires pour le texte, les boutons et la mise en page. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fullpage-image {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#image2 {
+    background-image: url('/Users/heddy/Desktop/esilv/A4/Software/Image/Capture d’écran 2023-12-07 à 22.51.06.png'); /* Assurez-vous que le chemin est correct */
+}
+
+.fullpage-image h1, .fullpage-image h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#image1 {
+    background-image: url('/Users/heddy/Desktop/esilv/A4/Software/Image/Capture d’écran 2023-12-07 à 22.48.27.png'); /* Assurez-vous que le chemin est correct */
+}
+.container {
+    display: flex;
+    margin: 20px;
+}
+.image {
+    flex: 40%;
+    padding: 10px 40px;
+}
+.content {
+    flex: 50%;
+    padding: 0 20px;
+}
+.heading {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+

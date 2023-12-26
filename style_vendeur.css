@@ -1,0 +1,151 @@
+/* Styles de base */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Arial', sans-serif; /* Utilisez la police que vous préférez */
+    color: white; /* Couleur de texte globale */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Barre de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #deb887;
+    padding: 10px;
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+nav a:hover {
+    color: #d2691e;
+}
+
+/* Boutons */
+button, .button {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif; /* Assurez-vous que cela correspond à votre style de police général */
+}
+
+button:hover, .button:hover {
+    background-color: #45a049;
+}
+
+/* Fond de page */
+body {
+    background-image: url('/Users/heddy/Desktop/esilv/A4/Software/Image/Accueil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Styles de section */
+#banner, .about-section, .cart-item, .subscription-option {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Noir avec 60% d'opacité */
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#banner h1, #banner p, .about-section h2, .about-section p {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Images produits */
+.product, .product-image {
+    display: flex;
+    align-items: center;
+    width: 100px; /* ou la taille que vous souhaitez */
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Informations produit */
+.product-info {
+    flex-grow: 1;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Main et cart-item */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Totals et boutons du panier */
+#cart-total {
+    font-weight: bold;
+}
+
+#checkout {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+/* Styles des articles du panier */
+.cart-item button {
+    background-color: #d9534f;
+    padding: 5px 10px;
+}
+
+.cart-item button:hover {
+    background-color: #c9302c;
+}
+/* CSS pour centrer le conteneur de boutons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hauteur de la vue entière */
+    flex-direction: column; /* Optionnel, si vous voulez les boutons en colonne */
+    gap: 10px; /* Optionnel, pour ajouter un peu d'espace entre les boutons */
+}
+/* CSS pour les boutons */
+.button-container button {
+    font-size: 18px; /* Ajuste la taille de la police */
+    padding: 15px 30px; /* Ajuste le remplissage interne pour augmenter la taille */
+    margin: 10px; /* Ajuste l'espacement autour des boutons */
+    border: none; /* Optionnel : enlève la bordure */
+    border-radius: 5px; /* Optionnel : arrondit les coins */
+    cursor: pointer; /* Optionnel : change le curseur pour indiquer qu'il s'agit d'un bouton cliquable */
+    background-color: #4CAF50; /* Optionnel : couleur de fond */
+    color: white; /* Optionnel : couleur du texte */
+}
+
+.button-container button:hover {
+    background-color: #45a049; /* Optionnel : couleur de fond au survol */
+}

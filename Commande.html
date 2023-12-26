@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Commandes - La Boulangerie Les Petits Pains</title>
+    <link rel="stylesheet" href="style_commande.css">
+    <script src="commande.js" defer></script>
+</head>
+<body>
+<main>
+    <div class="centered-container">
+        <button class="btn-retour" onclick="window.location.href='accueil.html'">Retour</button>
+    </div>
+
+    
+
+    <div class="commande-container">
+        <!-- Exemple de commande -->
+        <div class="commande" onclick="toggleDetails(this)">
+            <p class="commande-title">Commande #1 - En cours de préparation</p>
+            <button class="btn-modifier">Modifier</button>
+            <div class="commande-details" style="display: none;">
+                <p>ID: 1</p>
+                <p>Nom de l'acheteur: John Doe</p>
+                <p>Commande: 2 Baguettes, 1 Pain au chocolat</p>
+                <p>Prix Total: 5.50€</p>
+                <p>Destination: 123 Rue Paris</p>
+                <p>Status: En cours de préparation</p>
+            </div>
+        </div>
+        <div class="commande" onclick="toggleDetails(this)">
+            <p class="commande-title">Commande #2 - Préparé</p>
+            <button class="btn-modifier">Modifier</button>
+            <div class="commande-details" style="display: none;">
+                <p>ID: 2</p>
+                <p>Nom de l'acheteur: Alice Martin</p>
+                <p>Commande: 3 Traditions, 2 Pains au chocolat</p>
+                <p>Prix Total: 8.20€</p>
+                <p>Destination: 456 Avenue Liberté</p>
+                <p>Status: Préparé</p>
+            </div>
+        </div>
+
+        <div class="commande" onclick="toggleDetails(this)">
+            <p class="commande-title">Commande #3 - En cours d'acheminement</p>
+            <button class="btn-modifier">Modifier</button>
+            <div class="commande-details" style="display: none;">
+                <p>ID: 3</p>
+                <p>Nom de l'acheteur: Maxime Dupont</p>
+                <p>Commande: 5 Baguettes, 4 Pains au chocolat</p>
+                <p>Prix Total: 12.00€</p>
+                <p>Destination: 789 Boulevard de la République</p>
+                <p>Status: En cours d'acheminement</p>
+            </div>
+        </div>
+
+        <div class="commande" onclick="toggleDetails(this)">
+            <p class="commande-title">Commande #4 - Livré</p>
+            <button class="btn-modifier">Modifier</button>
+            <div class="commande-details" style="display: none;">
+                <p>ID: 4</p>
+                <p>Nom de l'acheteur: Émilie Leroux</p>
+                <p>Commande: 2 Baguettes, 3 Traditions</p>
+                <p>Prix Total: 7.30€</p>
+                <p>Destination: 321 Rue de la Paix</p>
+                <p>Status: Livré</p>
+            </div>
+        </div>
+
+        <!-- Plus de commandes ici... -->
+    </div>
+</main>
+</body>
+</html>

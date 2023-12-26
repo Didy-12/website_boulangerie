@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription - La Boulangerie Les Petits Pains</title>
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Produit</a></li>
+            <li><a href="abonnement.html">Abonnement</a></li>
+            <li><a href="panier.html">Panier</a></li>
+            <li><a href="apropos.html">À propos de nous</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="login-container">
+    <form class="login-form" method="post" action="inscription.php">
+
+        <!-- Email -->
+        <div class="input-group">
+            <label for="email">Adresse e-mail</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+            <?php if(isset($er_email)){ echo "<div>$er_email</div>"; } ?>
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="input-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            <?php if(isset($er_password)){ echo "<div>$er_password</div>"; } ?>
+        </div>
+
+        <!-- Confirmation du mot de passe -->
+        <div class="input-group">
+            <label for="confirm-password">Confirmez le mot de passe</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+            <?php if(isset($er_confirm_password)){ echo "<div>$er_confirm_password</div>"; } ?>
+        </div>
+
+        <!-- Prénom -->
+        <div class="input-group">
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Entrez votre prénom" required>
+            <?php if(isset($er_firstname)){ echo "<div>$er_firstname</div>"; } ?>
+        </div>
+
+        <!-- Nom -->
+        <div class="input-group">
+            <label for="lastname">Nom</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Entrez votre nom" required>
+            <?php if(isset($er_lastname)){ echo "<div>$er_lastname</div>"; } ?>
+        </div>
+
+        <!-- Adresse -->
+        <div class="input-group">
+            <label for="address">Adresse</label>
+            <input type="text" id="address" name="address" placeholder="Entrez votre adresse" required>
+            <?php if(isset($er_address)){ echo "<div>$er_address</div>"; } ?>
+        </div>
+
+        <!-- Code Postal -->
+        <div class="input-group">
+            <label for="postal-code">Code Postal</label>
+            <input type="text" id="postal-code" name="postal-code" placeholder="Entrez votre code postal" required>
+            <?php if(isset($er_postal_code)){ echo "<div>$er_postal_code</div>"; } ?>
+        </div>
+
+        <!-- Numéro de Téléphone -->
+        <div class="input-group">
+            <label for="phone">Numéro de Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+            <?php if(isset($er_phone)){ echo "<div>$er_phone</div>"; } ?>
+        </div>
+
+        <button type="submit" class="submit-button">S'inscrire</button>
+    </form>
+</main>
+
+
+<!-- Votre footer... -->
+
+</body>
+</html>
