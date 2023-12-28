@@ -1,4 +1,4 @@
-# website_test
+# website_boulangerie
 
 Ce projet consiste en la création d'un site web utilisant HTML, CSS et JavaScript. Il est conçu spécifiquement pour les boulangeries, visant à implémenter un système de livraison et d'abonnement à domicile. Le site permet aux utilisateurs de passer des commandes en ligne et de gérer leurs abonnements. Parallèlement, il offre aux responsables de la boulangerie un outil pour surveiller l'état du stock.
 
